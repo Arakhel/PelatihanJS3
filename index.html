@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Static Template</title>
+  </head>
+  <body>
+    <!-- <h1>This is a static template, there is no bundler or bundling involved!</h1> -->
+    <script>
+      //Learn function start
+      //#1
+      // function tampilkan() {
+      //   console.log("halo!");
+      // }
+
+      // tampilkan();
+
+      //#2
+      // function munculkanAngkaDua() {
+      //   return 2
+      // }
+
+      // var tampung = munculkanAngkaDua();
+      // console.log(tampung)
+
+      //#3
+      // function TambahDua(angka) {
+      //   return angka + 2
+      // }
+
+      //#4
+      // var tampung = TambahDua(2);
+      // console.log(tampung)
+
+      // function tampilkanAngka(angkaPertama, angkaKedua) {
+      //   return angkaPertama + angkaKedua
+      // }
+
+      // console.log(tampilkanAngka(5,3))
+
+      //#5
+      // function tampilkanAngka(angka = 1) {
+      //   return angka
+      // }
+
+      // console.log(tampilkanAngka(5))
+      // console.log(tampilkanAngka())
+
+      //#6
+      // var fungsiPenambahan = function(angkaPertama, angkaKedua) {
+      //   return angkaPertama + angkaKedua
+      // }
+
+      // console.log(fungsiPenambahan(2,4))
+
+      //Learn Array
+      //#1
+      // var myArray = [true, "satu", 2, null];
+      // console.log(myArray);
+      // myArray.push("diva");
+      // console.log(myArray);
+      // myArray.pop();
+      // console.log(myArray);
+      // myArray.slice(0, 2);
+      // console.log(myArray);
+
+
+      var supermanObj = {
+  id: "1a2b3c",
+  name: "Superman",
+  age: 200,
+  favorites: [
+    "coding",
+    "reading",
+    {
+      sports: ["parkour", "hill climbing"]
+    }
+  ],
+  address: {
+    street: "Planet Krypton",
+    zipCode: 54213
+  }
+};
+console.log(supermanObj.favorites[2].sports.splice(0, 1).push("football"));
+    </script>
+  </body>
+</html>
